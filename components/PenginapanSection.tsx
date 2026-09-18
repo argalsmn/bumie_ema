@@ -75,7 +75,7 @@ export default function PenginapanSection() {
 
   return (
     <section id="penginapan" className="py-20 sm:py-28 bg-white relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-slate-100/60 rounded-full blur-3xl -z-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -86,9 +86,9 @@ export default function PenginapanSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-100 text-stone-800 text-xs font-semibold tracking-wide uppercase mb-3"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-50 text-purple-900 border border-purple-200/60 text-xs font-semibold tracking-wide uppercase mb-3"
           >
-            <ShieldCheck className="w-4 h-4 text-[#E85D04]" />
+            <ShieldCheck className="w-4 h-4 text-purple-700" />
             <span>Penginapan Bumi Ema (@bumi_ema_)</span>
           </motion.div>
 
@@ -100,7 +100,7 @@ export default function PenginapanSection() {
             className="text-3xl sm:text-4xl lg:text-5xl font-black text-stone-900 tracking-tight"
           >
             Pilihan Paket Sewa,{" "}
-            <span className="text-[#E85D04]">Nyaman & Terjangkau</span>
+            <span className="text-purple-800">Nyaman & Terjangkau</span>
           </motion.h2>
 
           <motion.p
@@ -141,7 +141,7 @@ export default function PenginapanSection() {
                 </div>
 
                 <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <span className="text-xs uppercase tracking-wider text-amber-300 font-semibold">
+                  <span className="text-xs uppercase tracking-wider text-purple-300 font-semibold">
                     Kamar Bersih & Siap Huni
                   </span>
                   <h3 className="text-xl sm:text-2xl font-bold mt-1">
@@ -169,10 +169,10 @@ export default function PenginapanSection() {
                 <motion.div
                   key={fac.title}
                   variants={itemVariants}
-                  whileHover={{ y: -4, borderColor: "#E85D04" }}
-                  className="p-5 rounded-2xl bg-[#FAF8F5] border border-orange-100/60 shadow-sm hover:shadow-md transition-all group"
+                  whileHover={{ y: -4, borderColor: "#7C3AED" }}
+                  className="p-5 rounded-2xl bg-stone-50/80 border border-stone-200/80 shadow-sm hover:shadow-md transition-all group"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-orange-100/80 text-[#E85D04] flex items-center justify-center mb-3 group-hover:bg-[#E85D04] group-hover:text-white transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-purple-100 text-purple-800 flex items-center justify-center mb-3 group-hover:bg-purple-700 group-hover:text-white transition-colors">
                     <IconComp className="w-5 h-5" />
                   </div>
                   <h4 className="text-base font-bold text-stone-900 mb-1">{fac.title}</h4>

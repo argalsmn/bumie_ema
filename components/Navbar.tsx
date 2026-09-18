@@ -37,9 +37,9 @@ export default function Navbar() {
           {/* Brand Logo */}
           <a
             href="#beranda"
-            className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 rounded-lg p-1"
+            className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 rounded-lg p-1"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#E85D04] to-amber-500 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-800 via-purple-700 to-[#E85D04] flex items-center justify-center text-white shadow-md shadow-purple-950/20 group-hover:scale-105 transition-transform">
               <UtensilsCrossed className="w-5 h-5" />
             </div>
             <div className="flex flex-col">
@@ -58,7 +58,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium text-stone-700 hover:text-[#E85D04] rounded-lg hover:bg-orange-50/80 transition-colors"
+                className="px-3 py-2 text-sm font-medium text-stone-700 hover:text-purple-700 rounded-lg hover:bg-stone-100/80 transition-colors"
               >
                 {link.name}
               </a>
@@ -71,9 +71,9 @@ export default function Navbar() {
               href="https://wa.me/6282240553262?text=Halo%20Bumie%20Ema,%20saya%20ingin%20bertanya%20seputar%20penginapan%20atau%20warung%20mie."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-[#E85D04] to-amber-500 hover:from-[#dc2f02] hover:to-amber-600 shadow-md shadow-orange-500/25 hover:shadow-lg hover:shadow-orange-500/30 transition-all active:scale-95"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-purple-800 via-purple-700 to-indigo-700 hover:from-purple-900 hover:to-indigo-800 shadow-md shadow-purple-900/20 hover:shadow-lg transition-all active:scale-95"
             >
-              <PhoneCall className="w-4 h-4" />
+              <PhoneCall className="w-4 h-4 text-purple-200" />
               <span>Hubungi Usaha</span>
             </a>
           </div>
