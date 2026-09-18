@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf8f5;
+  --foreground: #1c1917;
+  --brand-orange: #e85d04;
+  --brand-orange-dark: #dc2f02;
+  --brand-amber: #f48c06;
+  --brand-purple: #4c1d95;
+  --brand-violet: #6d28d9;
+  --brand-violet-light: #7c3aed;
+  --brand-cream: #fff7ed;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand: var(--brand-orange);
+  --color-brand-dark: var(--brand-orange-dark);
+  --color-brand-amber: var(--brand-amber);
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-violet: var(--brand-violet);
+  --color-brand-cream: var(--brand-cream);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede6;
+}
+::-webkit-scrollbar-thumb {
+  background: #e85d04;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6d28d9;
 }
